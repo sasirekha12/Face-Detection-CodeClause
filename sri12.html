@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HTML5 Face Detection</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="wrapper">
+	<!-- Our Main Video Element -->
+	<video height="426" width="640" controls autoplay style="width:100px; height:75px;"></video>
+	<a href="#" onclick="App.start('glasses');">Glasses!</a>
+	<br>
+	<!-- Out Canvas Element for output -->
+	<canvas id="output"  height="426" width="515" ></canvas>
+
+	<div class="colours" style="display:none;">
+		<div id="red">
+			<input type="range" min=0 max=255 value=190 class="min">
+			<input type="range" min=0 max=255 value=240 class="max">
+		</div>
+		<div id="green">
+			<input type="range" min=0 max=255 value=0 class="min">
+			<input type="range" min=0 max=255 value=120 class="max">
+		</div>
+		<div id="blue">
+			<input type="range" min=0 max=255 value=90 class="min">
+			<input type="range" min=0 max=255 value=190 class="max">
+		</div>				
+	</div>
+
+</div>
+
+<script type="text/javascript" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Ffree-photo%2Fpurple-osteospermum-daisy-flower_1373-16.jpg%3Fw%3D2000&tbnid=IGnUmSefb6q9xM&vet=12ahUKEwipqtnVpLOAAxWVg2MGHTmjBuYQMygCegUIARD2AQ..i&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Fphotos%2Fflower&docid=x0pv5LiNmxeKNM&w=2000&h=1376&itg=1&q=flower&ved=2ahUKEwipqtnVpLOAAxWVg2MGHTmjBuYQMygCegUIARD2AQ"></script>
+<script type="text/javascript" src="scripts/ccv.js"></script>
+<script type="text/javascript" src="scripts/face.js"></script>
+<script type="text/javascript" src="scripts/scripts.js"></script>
+<script type="text/javascript" src="scripts/stackblur.js"></script>
+</body>
+</html>
